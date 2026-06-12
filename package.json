@@ -1,0 +1,14 @@
+{
+  "name": "dsa-studies",
+  "version": "1.0.0",
+  "private": true,
+  "description": "DSA practice with LeetCode Top Interview 150",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  }
+}
