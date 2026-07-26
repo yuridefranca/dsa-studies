@@ -26,9 +26,13 @@ Fetch and scaffold the next LeetCode problem from the Top Interview 150 study pl
 **If user said "next":**
 
 1. Read `top-interview-plan/plan.json`
-2. Scan existing folders under `top-interview-plan/` — pattern: `{order}-{slug}`
-3. Find the first problem in `plan.json` without a corresponding folder
-4. That's the next problem
+2. Find the first question where `completed` field is `false` or missing
+3. That's the next problem
+
+**Alternative method (if completed field not trusted):**
+1. Scan existing folders under `top-interview-plan/` — pattern: `{order}-{slug}`
+2. Cross-reference with `plan.json` to verify
+3. Find the first problem without a corresponding folder
 
 ### Step 2: Fetch problem data via browser
 
